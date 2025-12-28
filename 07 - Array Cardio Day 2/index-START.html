@@ -32,6 +32,7 @@
       const age = currentYear - person.year;
       return (age >= 19);
     });
+    
     // Array.prototype.every() // is everyone 19 or older?
     const areAdults = people.every(person => {
       const currentYear = (new Date()).getFullYear();
@@ -48,7 +49,6 @@
     // Find the comment with this ID
     // delete the comment with the ID of 823423
     comments.splice(comments.findIndex(item => item.id == 823423), 1);
-    console.log(comments);
 
   </script>
 </body>
